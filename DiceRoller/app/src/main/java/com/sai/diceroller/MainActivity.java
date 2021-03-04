@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 rollDice();
+                mp.start();
 
 //                displayToast();
             }
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void rollDice(){
-        int myRanNum = myRandomNumbers.nextInt(6)+1;
+        int myRanNum = myRandomNumbers.nextInt(6) +1;
         switch (myRanNum){
             case 1 :imageView1.setImageResource(R.drawable.dice1);
                 break;
@@ -53,18 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 //    private void displayToast() {
-//        myRanNum = myRandomNumbers.nextInt(6)+1;
+//
 //        Toast.makeText(getApplicationContext(),myRanNum,Toast.LENGTH_SHORT).show();
 //    }
-
-
-
-
-
-
-
-
-
-
 
 }
